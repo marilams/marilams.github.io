@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+</head>
+
+<body>
+  <header>
+    <h1 class="title">
+      SPLI<br>TTER
+    </h1>
+  </header>
+
+  <main class="main">
+    <!-- Section amount -->
+    <div class="container-desktop">
+      <section class="section-amount">
+        <div class="bill-container">
+          <h3 class="text-titles bill">Bill</h3>
+          <input type="number" name="billAmount" class="amount" id="billAmount">
+        </div>      
+      </section>
+  
+      <!-- Section tip -->
+      <section class="section-tip"> 
+        <div class="tip-selector-container">
+          <h3 class="text-titles">Select Tip %</h3>
+          <div class="button-container">
+            <button class="btn cinco" id="cinco">5%</button>
+            <button class="btn diez" id="diez">10%</button>
+            <button class="btn quince" id="quince">15%</button>
+            <button class="btn veinticinco" id="veinticinco">25%</button>
+            <button class="btn cincuenta" id="cincuenta">50%</button>
+            <input type="number" class="btn btn-custom" placeholder="Custom" id="custom">
+          </div>    
+        </div>
+      </section>
+  
+      <!-- Section persons -->
+      <section class="section-people"> 
+        <div class="number-people-container">
+          <h3 class="text-titles">Number of People</h3>
+          <input type="number" class="number-people" id="people">
+        </div>
+      </section>
+    </div>
+
+    <!-- Section amount -->
+    <section class="section-amounts">
+      <div class="amounts-container">
+        <div class="tip-amount-wrapper">
+          <p>Tip Amount <br><span>/ person</span></p>
+          <div class="tip-total"><span class="numbers" id="total-one">$</span></div>
+        </div>
+        <div class="tip-amount-wrapper">
+          <p>Total<br><span>/ person</span></p>
+          <div class="tip-total"><span class="numbers" id="total-two">$</span></div>
+        </div>
+      </div>
+      <button class="btn-reset desabled" id="btnReset">RESET</button>
+    </section>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/marilams">@Marilams</a>.
+    </div>
+  
+  </main>
+
+  
+ <script src="./js/index.js"></script>
+</body>
+</html>
